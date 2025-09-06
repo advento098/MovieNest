@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aJ0qLf6E5jY=",
+  "dgSpecHash": "eISfgdhLnrE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Pons Anthony Advento\\Documents\\.net projects\\MovieNest\\backend\\MovieNestBackend\\MovieNestBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pons Anthony Advento\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.8\\microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
-    "C:\\Users\\Pons Anthony Advento\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+    "C:\\Users\\Pons Anthony Advento\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\Pons Anthony Advento\\.nuget\\packages\\scalar.aspnetcore\\2.7.2\\scalar.aspnetcore.2.7.2.nupkg.sha512"
   ],
   "logs": []
 }

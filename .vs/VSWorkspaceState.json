@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\backend\\MovieNestBackend"
   ],
-  "SelectedNode": "\\C:\\Users\\Pons Anthony Advento\\Documents\\.net projects\\MovieNest",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\.gitignore",
+  "PreviewInSolutionExplorer": true
 }
