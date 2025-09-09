@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieNestBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09a2fc1478f31a061bd7635ea78bc1cdfe144fb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56ef47f9052ebdee1fffb0e015ca346d3201f71a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieNestBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieNestBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

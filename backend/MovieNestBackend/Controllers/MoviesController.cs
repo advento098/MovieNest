@@ -8,10 +8,10 @@ namespace MyApp.Namespace
 {
     [Route("api/[controller]")]
     [ApiController]
-
-
     public class MoviesController : ControllerBase
     {
+
+
         private readonly HttpClient _httpClient;
 
         public MoviesController(HttpClient httpClient)
@@ -20,25 +20,36 @@ namespace MyApp.Namespace
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetPopularMovies([FromQuery] string query)
+        public async Task<IActionResult> SearchMovies([FromQuery] string s)
         {
-            if (string.IsNullOrWhiteSpace(query))
-                return BadRequest("Add something on the query");
+            if (string.IsNullOrWhiteSpace(s))
+                return BadRequest("Add something on the s");
 
-            const string apiKey = "110ecaa3";
-            string url = $"http://www.omdbapi.com/?s={Uri.EscapeDataString(query)}&apikey={apiKey}";
+            string? apiKey = Environment.GetEnvironmentVariable("API_KEY");
+
+            if (apiKey == null || apiKey == "")
+                return Content("No api key found");
+
+            string url = $"http://www.omdbapi.com/?s={Uri.EscapeDataString(s)}&apikey={apiKey}";
 
             var response = await _httpClient.GetAsync(url);
             if (!response.IsSuccessStatusCode)
                 return StatusCode((int)response.StatusCode, "API request failed");
 
-            var content = await response.Content.ReadAsStringAsync();
-            var json = JsonDocument.Parse(content);
-            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-            var json2 = JsonSerializer.Deserialize<ResponseTemplate>(content, options);
+            try
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                using var stringJson = JsonDocument.Parse(content);
+                var movies = stringJson.RootElement.GetProperty("Search").GetRawText();
+                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+                var result = JsonSerializer.Deserialize<List<Movies>>(movies, options);
 
-            Console.WriteLine($"json2 is: {json2}");
-            return Ok(json);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"There's no such thing as string, error: {e}");
+            }
         }
     }
 }

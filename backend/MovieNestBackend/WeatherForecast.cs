@@ -10,4 +10,5 @@ namespace MovieNestBackend
 
         public string? Summary { get; set; }
     }
+
 }
