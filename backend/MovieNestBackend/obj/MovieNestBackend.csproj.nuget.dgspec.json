@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ETCIT-DEV\\Documents\\MovieNest\\backend\\MovieNestBackend\\MovieNestBackend.csproj": {}
+    "C:\\Users\\Pons Anthony Advento\\Documents\\.net projects\\MovieNest\\backend\\MovieNestBackend\\MovieNestBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ETCIT-DEV\\Documents\\MovieNest\\backend\\MovieNestBackend\\MovieNestBackend.csproj": {
+    "C:\\Users\\Pons Anthony Advento\\Documents\\.net projects\\MovieNest\\backend\\MovieNestBackend\\MovieNestBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ETCIT-DEV\\Documents\\MovieNest\\backend\\MovieNestBackend\\MovieNestBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Pons Anthony Advento\\Documents\\.net projects\\MovieNest\\backend\\MovieNestBackend\\MovieNestBackend.csproj",
         "projectName": "MovieNestBackend",
-        "projectPath": "C:\\Users\\ETCIT-DEV\\Documents\\MovieNest\\backend\\MovieNestBackend\\MovieNestBackend.csproj",
-        "packagesPath": "C:\\Users\\ETCIT-DEV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ETCIT-DEV\\Documents\\MovieNest\\backend\\MovieNestBackend\\obj\\",
+        "projectPath": "C:\\Users\\Pons Anthony Advento\\Documents\\.net projects\\MovieNest\\backend\\MovieNestBackend\\MovieNestBackend.csproj",
+        "packagesPath": "C:\\Users\\Pons Anthony Advento\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pons Anthony Advento\\Documents\\.net projects\\MovieNest\\backend\\MovieNestBackend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ETCIT-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Pons Anthony Advento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +53,10 @@
             "DotNetEnv": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
